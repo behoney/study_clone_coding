@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import DetailPage from './DetailPage';
 import IndexPage from './pages/IndexPage';
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/' component={IndexPage} />
-        <Route path='/' component={IndexPage} />
+        <Route exact path='/' component={IndexPage} />
+        <Route path='/:id' component={DetailPage} />
       </Switch>
     </BrowserRouter>
   );
