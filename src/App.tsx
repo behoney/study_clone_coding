@@ -1,11 +1,13 @@
 import React from 'react';
-import Carousel from './Carousel';
+import Pagination from './Pagination';
 import Skeleton from './Skeleton';
 function App() {
   return (
     <div>
       {/* <Skeleton count={4}></Skeleton> */}
-      <Carousel></Carousel>
+      <Pagination count={5} page={1} onPageChange={function (page: number): void {
+        console.log(page);
+      }} />
     </div>
   );
 }
