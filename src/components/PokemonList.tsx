@@ -6,7 +6,7 @@ const getImageUrl = (pokemonIndex: number): string =>
 
 function PokemonList() {
     return (
-        <div className='base'>
+        <div className='poke-list base'>
             <ul className='list'>
                 <li className='list-item'>
                     <img className='image' src="" alt="" />
