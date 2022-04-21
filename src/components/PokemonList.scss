@@ -1,11 +1,40 @@
-.Base {}
+.base {
+    margin-top: 24px;
+}
 
-.ListItem {}
+.list-item {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px rgba(0, 0, 0, 0.61);
+    border-radius: 12px;
+    margin-top: 18px;
+}
 
-.List {}
+.list {
+    margin: 0;
+    padding: 0;
+}
 
-.Image {}
+.image {}
 
-.Name {}
+.name {
+    margin: 0;
+    padding: 0 0 0 12px;
+    flex: 1 1 100%;
+    color: #838221;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
 
-.Index {}
+.index {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d99d12;
+}
