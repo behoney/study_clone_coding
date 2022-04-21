@@ -3,7 +3,7 @@ import Skeleton from './Skeleton';
 function App() {
   return (
     <div>
-      <Skeleton></Skeleton>
+      <Skeleton count={4}></Skeleton>
     </div>
   );
 }
