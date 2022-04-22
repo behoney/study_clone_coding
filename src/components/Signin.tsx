@@ -1,9 +1,12 @@
 import React from 'react'
-import SigninContainer from './containers/SigninContainer'
 
 function Signin() {
     return (
-        <SigninContainer />
+        <div>
+            <h1>
+                Signin
+            </h1>
+        </div>
     )
 }
 
