@@ -6,19 +6,24 @@ import Detail from './Detail';
 import Add from './Add';
 import Signin from './Signin';
 import NotFound from './NotFound';
+import { ErrorBoundary } from 'react-error-boundary';
+import Error from './Error';
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/edit/:id" element={<Edit />}></Route>
-        <Route path="/book/:id" element={<Detail />}></Route>
-        <Route path="/add" element={<Add />}></Route>
-        <Route path="/Signin" element={<Signin />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <ErrorBoundary fallback={<Error />}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/edit/:id" element={<Edit />}></Route>
+          <Route path="/book/:id" element={<Detail />}></Route>
+          <Route path="/add" element={<Add />}></Route>
+          <Route path="/Signin" element={<Signin />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
 
